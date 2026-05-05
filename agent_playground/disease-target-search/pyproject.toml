@@ -1,0 +1,22 @@
+[project]
+name = "targetsearch"
+version = "0.1.0"
+description = "Agent system for drug target discovery"
+requires-python = ">=3.12"
+dependencies = [
+    "litellm",
+    "pydantic>=2.0",
+    "httpx",
+    "requests",
+    "python-dotenv",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-asyncio"]
+
+[tool.setuptools.packages.find]
+include = ["targetsearch*"]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"

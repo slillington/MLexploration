@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.venv/
+.env
+logs/
+
+# Test run outputs (ephemeral)
+*_output.txt
+*_output_*.json
+testrun_output_*.txt
+NSCLC_output*
